@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jigyasa computer - Empowering Tomorrow's Leaders</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind to use a modern font like Inter -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary-blue': '#1D4ED8',
+                        'secondary-gray': '#F3F4F6',
+                        'accent-orange': '#F59E0B',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Import Inter font (best practice for Tailwind/modern design) */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-white">
+
+    <!-- Header & Navigation -->
+    <header class="bg-primary-blue shadow-lg fixed w-full z-10 top-0">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <a href="#home" class="text-3xl font-extrabold text-white tracking-tight">
+                    Jigyasa computer
+                </a>
+                <nav class="hidden md:flex space-x-8">
+                    <a href="#courses" class="text-white hover:text-accent-orange transition duration-300 text-lg font-medium">Courses</a>
+                    <a href="#about" class="text-white hover:text-accent-orange transition duration-300 text-lg font-medium">About Us</a>
+                    <!-- Removed Contact link -->
+                </nav>
+                <!-- Mobile Menu Button (Hamburger Icon - purely visual for this single-page example) -->
+                <button class="md:hidden text-white hover:text-accent-orange focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-20"> <!-- Added pt-20 to offset fixed header -->
+        <!-- Hero Section -->
+        <section id="home" class="bg-secondary-gray py-20 md:py-32">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-primary-blue mb-4">
+                    Learn Today. Lead Tomorrow.
+                </h1>
+                <p class="text-xl sm:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                    Offering cutting-edge education in technology, business, and creative arts to build your future.
+                </p>
+                <a href="#courses" class="inline-block bg-accent-orange text-white font-bold py-3 px-8 rounded-xl shadow-lg hover:shadow-xl hover:bg-orange-600 transition duration-300 transform hover:scale-105">
+                    Explore Our Courses
+                </a>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section id="courses" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-primary-blue mb-12">Popular Courses</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Course Card 1 -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-100 transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <svg class="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zM6 10a1 1 0 011-1h6a1 1 0 110 2H7a1 1 0 01-1-1z"></path></svg>
+                            <h3 class="text-2xl font-semibold text-gray-900">Full Stack Development</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Master the MERN stack and build robust web applications from front-end design to back-end architecture.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• 6 Months Duration</li>
+                            <li>• Project-Based Learning</li>
+                        </ul>
+                    </div>
+
+                    <!-- Course Card 2 -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-100 transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <svg class="w-8 h-8 text-purple-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.898 1.5l2 4a1 1 0 101.796-.998l-2-4A1 1 0 0010 7z" clip-rule="evenodd"></path></svg>
+                            <h3 class="text-2xl font-semibold text-gray-900">Data Science & AI</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Dive into machine learning, statistical modeling, and data visualization using Python and R.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• 8 Months Duration</li>
+                            <li>• Industry Certifications</li>
+                        </ul>
+                    </div>
+
+                    <!-- Course Card 3 -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-100 transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <svg class="w-8 h-8 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM10 5a2 2 0 100 4 2 2 0 000-4z"></path></svg>
+                            <h3 class="text-2xl font-semibold text-gray-900">Digital Marketing Strategy</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Learn SEO, SEM, social media marketing, and content creation to drive business growth.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• 4 Months Duration</li>
+                            <li>• Capstone Project</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Course Card 4 -->
+                    <div class="bg-white p-6 rounded-xl shadow-xl border border-gray-100 transform hover:scale-105 transition duration-300">
+                        <div class="flex items-center space-x-3 mb-4">
+                            <svg class="w-8 h-8 text-red-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M4 4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm12 8l-4 4-4-4"></path></svg>
+                            <h3 class="text-2xl font-semibold text-gray-900">Graphic Design Fundamentals</h3>
+                        </div>
+                        <p class="text-gray-600 mb-4">Master industry-standard tools like Adobe Photoshop and Illustrator for stunning visual communication.</p>
+                        <ul class="text-sm text-gray-500 space-y-1">
+                            <li>• 3 Months Duration</li>
+                            <li>• Portfolio Building</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-16 md:py-24 bg-secondary-gray">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-primary-blue mb-12">Our Mission</h2>
+                <div class="max-w-4xl mx-auto text-lg text-gray-700 leading-relaxed text-center">
+                    <p class="mb-4">
+                        Jigyasa computer is dedicated to bridging the gap between theoretical knowledge and practical industry skills. Our curriculum is designed by industry experts and constantly updated to ensure our graduates are competitive in the fast-evolving global job market.
+                    </p>
+                    <p>
+                        We believe in small class sizes, personalized mentorship, and a commitment to lifelong learning for every student. Join us and transform your potential into reality.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Simplified) -->
+        <section id="contact" class="py-16 md:py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-primary-blue mb-12">Get in Touch</h2>
+
+                <div class="max-w-2xl mx-auto bg-secondary-gray p-10 rounded-xl shadow-2xl text-center">
+
+                    <!-- Contact Details Only (No form) -->
+                    <h3 class="text-2xl font-semibold text-gray-900 mb-6">Reach Out Directly</h3>
+                    
+                    <div class="space-y-6 text-left inline-block">
+                        <!-- Address -->
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-accent-orange mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                            <div>
+                                <p class="font-medium text-gray-700">Address:</p>
+                                <p class="text-gray-600">123 Jigyasa computer, Suite 400<br>Innovation City, State, 90210</p>
+                            </div>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-accent-orange mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                            <div>
+                                <p class="font-medium text-gray-700">Email:</p>
+                                <a href="mailto:jigyasacomputer50@gmail.com" class="text-primary-blue hover:text-accent-orange transition duration-300">jigyasacomputer50@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="flex items-start space-x-3">
+                            <svg class="w-6 h-6 text-accent-orange mt-1 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                            <div>
+                                <p class="font-medium text-gray-700">Phone:</p>
+                                <a href="tel:+15551234567" class="text-gray-600 hover:text-primary-blue transition duration-300">+91 9616004758</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Legal Documentation Section (NEW) -->
+        <section id="legal" class="py-16 md:py-24 bg-secondary-gray">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <h2 class="text-4xl font-bold text-center text-primary-blue mb-12">Legal Documentation</h2>
+                
+                <!-- Terms of Use -->
+                <div class="mb-16 max-w-4xl mx-auto">
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-6 border-b border-primary-blue pb-2">Terms of Use</h3>
+                    <div class="text-lg text-gray-700 leading-relaxed">
+                        <p class="mb-4 font-bold">1. Acceptance of Terms</p>
+                        <p class="mb-4">
+                            By accessing and using the Jigyasa computer website ("the Site"), you accept and agree to be bound by the terms and provisions of this agreement.
+                        </p>
+                        
+                        <p class="mb-4 font-bold">2. Intellectual Property</p>
+                        <p class="mb-4">
+                            All content, text, graphics, logos, and course material displayed on the Site are the property of Jigyasa computer and are protected by applicable copyright and trademark law. Unauthorized use or reproduction is strictly prohibited.
+                        </p>
+
+                        <p class="mb-4 font-bold">3. Limitation of Liability</p>
+                        <p class="mb-4">
+                            The Site is provided on an "as-is" and "as-available" basis. Jigyasa computer makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties, including without limitation, implied warranties of merchantability, fitness for a particular purpose, or non-infringement of intellectual property.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Privacy Policy -->
+                <div class="max-w-4xl mx-auto">
+                    <h3 class="text-3xl font-semibold text-gray-900 mb-6 border-b border-primary-blue pb-2">Privacy Policy</h3>
+                    <div class="text-lg text-gray-700 leading-relaxed">
+                        <p class="mb-4 font-bold">1. Data Collection & Use</p>
+                        <p class="mb-4">
+                            Jigyasa computer is a static website and does **not** use forms or direct input fields to collect any personally identifiable information (PII) from its visitors, such as names, email addresses, or phone numbers.
+                        </p>
+
+                        <p class="mb-4 font-bold">2. Passive Data Collection (Hosting Platform)</p>
+                        <p class="mb-4">
+                            Like all websites, the Site automatically collects non-personal data through its hosting platform for security, maintenance, and traffic analysis. This data may include your IP address, browser type, device type, referral source, and pages viewed. This information is used solely to monitor site performance and is not linked to any personal identity.
+                        </p>
+
+                        <p class="mb-4 font-bold">3. Cookies</p>
+                        <p class="mb-4">
+                            This Site does not intentionally use tracking cookies or third-party behavioral tracking technologies. Any cookies present are strictly technical and necessary for the function of the hosting environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-lg font-bold mb-2">Jigyasa computer</p>
+            <!-- UPDATED LINK HERE -->
+            <p class="text-sm text-gray-400">&copy; 2025 All rights reserved. | <a href="#legal" class="hover:text-accent-orange transition duration-300">Legal Documentation & Privacy</a></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript - All Firebase/Firestore logic has been removed as the site is now static. -->
+    <script type="module">
+        // This script block is now empty as all data collection and database logic (Firebase/Firestore) has been removed.
+    </script>
+</body>
+</html>
